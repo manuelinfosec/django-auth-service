@@ -1,0 +1,7 @@
+Django==3.2.15
+django-db-connection-pool==1.2.4
+django-rest-framework==0.1.0
+djangorestframework==3.14.0
+drf-jwt==1.19.1
+greenlet==3.0.1 
+gunicorn==21.2.0
