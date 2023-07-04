@@ -124,14 +124,17 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+# DRF Configuration
 REST_FRAMEWORK = {
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
-        
+
     ]
 }
 
+JWT_AUTH = {
+    "JWT_PAYLOAD_HANDLER": "auth_manager.utils.custom_payload_handler"
+}
 
 
 # API Version
