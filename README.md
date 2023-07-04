@@ -16,12 +16,12 @@ gunicorn auth_service.wsgi:application --bind 127.0.0.1:8000
 ### Usage
 Following endpoints are available:
 ```
-register/ - user registration
-login/ - user login and JWT token retrievement
-user/ - user account management (get/update/delete)
-secure/ - test endpoint to check JWT token
-token_verify/ - endpoint for other microservices
-token_refresh/ - to refresh expired token with new one
+register/ - Register new user
+login/ - User login and retrieving JWT tokens
+user/ - Manage user's account (GET/Update/DELETE)
+protected/ - Test JWT Authentication and Authorization
+token_verify/ - Verify JWT from external service
+token_refresh/ - Refresh expired token
 ```
 
 ### Technologies 
