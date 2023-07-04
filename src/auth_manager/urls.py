@@ -13,7 +13,7 @@ MANAGE_USER = ManageUserView.as_view(
 
 urlpatterns = [
     # User Registration
-    path("register/", CreateUserView.as_view({"post": "create"}), name="register"),
+    path("register/", CreateUserView.as_view({"post": "create"}), name="register_user"),
     # API View that receives a POST with a user's username and password.
     path("login/", obtain_jwt_token, name="login_user"),
     # CRUD operations for user management

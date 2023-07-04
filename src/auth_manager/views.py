@@ -58,4 +58,4 @@ class TestSecuredView(APIView):
     authentication_classes = (JSONWebTokenAuthentication,)
 
     def get(sef, request, format=None):
-        return Response({"ok": True})
+        return Response({"ok": True}) # 200 as default status code
